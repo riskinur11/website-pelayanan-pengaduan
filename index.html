@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Pengaduan | Perumda Tirta Perwira Purbalingga</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Anda dapat membuat file CSS terpisah untuk mengatur tampilan website -->
+    <!-- Tambahkan Font Awesome CSS (pastikan untuk mengunduh dan menggantinya dengan URL yang benar) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="img/Desain tanpa judul.png" alt="Logo Perusahaan Anda" />
+      <h1>Layanan Pengaduan</h1>
+      <h2>Perumdam Tirta Perwira</h2>
+      <h3>Kabupaten Purbalingga</h3>
+    </header>
+
+    <main>
+      <p>Silahkan berikan kami masukan atau pengaduan Anda</p>
+      <p><i>pengaduan ini akan dilayani selama jam kerja*</i></p>
+      <section>
+        <h2>Form Pengaduan</h2>
+        <form action="submit.php" method="post">
+          <label for="nama"><i class="fas fa-user"></i> Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telepon"
+            ><i class="fas fa-phone"></i> Nomor Telepon:</label
+          >
+          <input type="tel" id="telepon" name="telepon" required />
+
+          <label for="nomor-pelanggan"
+            ><i class="fas fa-id-card"></i> Nomor Pelanggan:</label
+          >
+          <input
+            type="text"
+            id="nomor-pelanggan"
+            name="nomor_pelanggan"
+            required
+          />
+
+          <label for="alamat"
+            ><i class="fas fa-map-marker-alt"></i> Alamat:</label
+          >
+          <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+          <label for="jenis-pengaduan"
+            ><i class="fas fa-exclamation-circle"></i> Jenis Pengaduan:</label
+          >
+          <select id="jenis-pengaduan" name="jenis_pengaduan" required>
+            <option value="Aliran Pelanggan">Aliran Pelanggan</option>
+            <option value="Aliran Komplek">Aliran Komplek</option>
+            <option value="Bocor Pelanggan">Bocor Pelanggan</option>
+            <option value="Bocor Pipa / Aliran">Bocor Pipa / Aliran</option>
+            <option value="Tagihan / Rekening">Tagihan / Rekening</option>
+            <option value="Lainnya">Lainnya</option>
+          </select>
+
+          <label for="judul"
+            ><i class="fas fa-heading"></i> Judul Pengaduan:</label
+          >
+          <input type="text" id="judul" name="judul" required />
+
+          <label for="pesan"
+            ><i class="fas fa-comment"></i> Pesan Pengaduan:</label
+          >
+          <textarea id="pesan" name="pesan" rows="4" required></textarea>
+
+          <button type="submit">Kirim Pengaduan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Layanan Pengaduan Perumdam Tirta Perwira</p>
+    </footer>
+  </body>
+</html>

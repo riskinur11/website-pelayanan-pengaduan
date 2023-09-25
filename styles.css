@@ -1,0 +1,121 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set font family and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: auto; /* Mengatur lebar gambar agar mengikuti tingginya */
+  height: 100px; /* Ubah tinggi logo sesuai kebutuhan */
+  margin-right: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header h2 {
+  font-size: 36px;
+}
+
+header h3 {
+  font-size: 36px;
+}
+
+main p {
+  font-size: 18px;
+}
+
+/* Style main content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e9e1e1;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label[for="jenis-pengaduan"] {
+  margin-bottom: 10px;
+}
+
+label[for="jenis-pengaduan"] i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+select#jenis-pengaduan {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Style footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style icons */
+label i {
+  margin-right: 5px;
+  font-size: 18px;
+}
